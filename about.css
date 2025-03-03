@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    background: #131313;
+    color: #00AECC;
+    align-items: center;
+    top: 0;
+    padding: 10px 60px 16px 60px;
+    justify-content: space-between;
+}
+
+.about-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.about-poster {
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+    object-fit: contain;
+}
+
+.poster-cover {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    background-image: url('/poster/poster_right.png');
+    background-repeat: cover;
+}
+
+.about-content {
+    width: 667px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.about-content::-webkit-scrollbar {
+    display: none;
+}
+
+.about-title {
+    width: 100%;
+    display: flex;
+    padding: 112px 60px 100px 60px;
+    flex-direction: column;
+    gap: 240px;
+    background: #131313;
+    color: #FAFBFB;
+}
+
+.about-title-about {
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-title-turnover {
+    font-family: Pretendard;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-title-sub {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.about-info {
+    width: 100%;
+    display: flex;
+    padding: 112px 60px 150px 60px;
+    flex-direction: column;
+    gap: 160px;
+    background: #BDECF3;
+    color: #131313;
+}
+
+.about-info-part {
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about-info-title {
+    font-family: Pretendard;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-club-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-club-sub {
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151.252%
+}
+
+.about-club-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-club-info {
+    justify-content: space-between;
+
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    text-transform: uppercase;
+
+    margin-top: 36px;
+
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.about-club-info.show {
+    display: flex;
+    opacity: 1;
+}
+
+.toggle-button {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(180deg);
+    padding: 10px;
+}
+
+.toggle-button.rotated {
+    transform: rotate(0deg); 
+}
+
+.about-club-info > p {
+    width: 406px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-club-info > a {
+    padding: 10px;
+    margin-top: auto;
+}
+
+.about-club-icons {
+    display: flex;
+    gap: 4px;
+    margin-top: auto;
+}
+
+.about-club-icons a {
+    padding: 0 10px 0 0;
+}
+
+
+@media (max-width: 1500px) {
+    .about-poster > img {
+        width: auto;
+        height: 100%;
+    }
+
+    .about-title, 
+    .about-info {
+        padding: 70px 50px;
+        gap: 140px;
+    }
+
+    .about-title-about {
+        font-size: 16px;
+    }
+
+    .about-title-turnover {
+        font-size: 40px;
+    }
+
+    .about-title-sub {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .about-info-title {
+        font-size: 40px;
+    }
+
+    .about-info-part {
+        font-size: 16px;
+    }
+
+    .about-club-logo img {
+        width: 200px;
+        height: auto;
+    }
+
+    .toggle-button {
+        height: auto;
+        max-width: 45px;
+    }
+
+    .about-club-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-club-info > p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1368px) {
+    body {
+        display: block;
+    }
+    
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .poster-cover {
+        display: none;
+    }
+    
+    .about-poster {
+        flex-grow: 0;
+    }
+
+    .about-poster > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-content {
+        width: 100%;
+        height: auto;
+        overflow-y: visible;
+    }
+
+    .about-title, 
+    .about-info {
+        padding: 80px 60px;
+        gap: 140px;
+    }
+
+    .about-title-about {
+        font-size: 20px;
+    }
+
+    .about-title-turnover {
+        font-size: 50px;
+    }
+
+    .about-title-sub {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .about-info-title {
+        font-size: 50px;
+    }
+
+    .about-info-part {
+        font-size: 20px;
+    }
+
+    .about-club-logo img {
+        width: 264px;
+        height: auto;
+    }
+
+    .toggle-button {
+        height: auto;
+        max-width: 50px;
+    }
+    
+    .about-club-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-club-info > p {
+        width: 100%;
+        font-size : 16px;
+        line-height: 28px;
+    }
+
+    .about-club-info > a {
+        padding: 0 10px 0 0;
+    }
+
+    .about-poster {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title-turnover,
+    .about-info-title {
+        font-size: 40px;
+    }
+
+    .about-title, 
+    .about-info {
+        padding: 60px 50px;
+        gap: 100px;
+    }
+
+    .about-title-about,
+    .about-info-part {
+        font-size: 18px;
+    }
+
+    .about-title-sub {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-poster {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title-turnover,
+    .about-info-title {
+        font-size: 25px;
+    }
+
+    .about-title, 
+    .about-info {
+        padding: 40px 30px;
+        gap: 80px;
+    }
+
+    .about-title-about,
+    .about-info-part {
+        font-size: 14px;
+    }
+
+    .about-title-sub {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .about-club-sub {
+        font-size: 14px;
+    }
+
+    .about-club-info {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .about-club-info > p {
+        width: 100%;
+    }
+
+    .about-club-info > img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-club-icons > img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-poster {
+        width: 100%;
+    }
+
+    .about-club-logo img {
+        width: 60%;
+        height: auto;
+    }
+
+    .toggle-button {
+        height: auto;
+        max-width: 40px;
+    }
+
+}
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 60px;
+    align-items: center;
+    background: #f4f4f4;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer-ex-content {
+    display: flex;
+    gap: 136px;
+}
+
+.footer-ex-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 67px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: auto;
+    height: 15px;
+}
+
+.footer-text-title, 
+.footer-text-content {
+    color: #A9A9A9;
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.footer-text-title {
+    font-weight: 700;
+}
+
+.footer-text-content {
+    font-weight: 400;
+}
+
+/* 반응형 - 푸터 */
+
+@media (max-width: 1500px) {
+    footer {
+        padding: 14px 60px;
+        align-items: center;
+    }
+
+    .footer-ex-content {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1280px) {
+    footer {
+        height: 96px;
+        padding: 14px 60px;
+        align-items: center;
+    }
+
+    .footer-ex-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    footer {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-ex-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-ex-info {
+        gap: 30px;
+    }
+
+    .footer-logo {
+        gap: 40px;
+    }
+
+    .footer-logo img {
+        height: 14px; 
+    }
+
+    .footer-text-title, 
+    .footer-text-content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 100dvh;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-ex-content {
+        flex-direction: column;
+        gap: 40px
+    }
+
+    .footer-ex-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-logo img {
+        height: 12px;
+    }
+
+    .footer-text-title,
+    .footer-text-content {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        height: auto;
+    }
+
+    .footer-text-title,
+    .footer-text-content {
+        font-size: 12px;
+    }
+
+    .footer-logo img {
+        height: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer {
+        height: auto;
+    }
+
+    .footer-logo {
+        gap: 20px;
+    }
+
+    .footer-text-title,
+    .footer-text-content {
+        font-size: 12px;
+    }
+
+    .footer-logo img {
+        height: 12px;
+    }
+}
