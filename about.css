@@ -46,7 +46,7 @@ header {
     display: flex;
     flex-grow: 1;
     height: 100%;
-    background-image: url('/poster/poster_right.png');
+    background-image: url('poster/poster_right.png');
     background-repeat: cover;
 }
 
