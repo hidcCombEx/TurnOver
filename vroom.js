@@ -98,8 +98,7 @@ window.vroomProjects = [
             "images/detail_image/vroom/이태민_M.A.R.S/부릉부릉_M.A.R.S_이태민_6.png",
             "images/detail_image/vroom/이태민_M.A.R.S/부릉부릉_M.A.R.S_이태민_7.png",
             "images/detail_image/vroom/이태민_M.A.R.S/부릉부릉_M.A.R.S_이태민_8.png",
-            "images/detail_image/vroom/이태민_M.A.R.S/부릉부릉_M.A.R.S_이태민_9.png",
-            "images/detail_image/vroom/이태민_M.A.R.S/부릉부릉_M.A.R.S_이태민.mp4"
+            "images/detail_image/vroom/이태민_M.A.R.S/부릉부릉_M.A.R.S_이태민_9.png"
         ],
         descText: `M.A.R.S는 Mobility for AIP, Relationship, and Stay의 약자로, 자율주행 모빌리티가 이동수단을 넘어 집과 삶의 일부로서 사용되며, 더 나은 이동 경험과 거주 경험을 제공하는 모비텍쳐(Mobility + Architecture)입니다.`,
         contact: {
