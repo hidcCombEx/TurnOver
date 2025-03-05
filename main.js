@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imageCells.forEach(cell => {
         cell.addEventListener("click", function () {
             this.classList.toggle("clicked");
+            this.classList.toggle("flipped");
         });
     });
 });

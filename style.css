@@ -86,6 +86,7 @@ main {
 }
 
 .image-cell {
+    position: relative;
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -93,7 +94,12 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: background-image 0.3s ease-in-out;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.image-cell.flipped {
+    transform: rotateX(360deg);
 }
 
 .black-grid {
