@@ -26,18 +26,17 @@ function getScreenType() {
     return {
         isMobile: window.matchMedia("(max-width: 767px)").matches,
         isTablet: window.matchMedia("(max-width: 1023px)").matches,
-        isSmallDesktop: window.matchMedia("(max-width: 2048px)").matches
     };
 }
 
 //============================================
 // Return 버튼 추가 여부 체크 (모든 페이지에서 사용 가능)
 function checkAndAddReturnButton() {
-    const { isMobile, isTablet, isSmallDesktop } = getScreenType();
+    const { isMobile, isTablet } = getScreenType();
     const rightPanel = document.querySelector(".right .project-detail-info");
 
     if (rightPanel) {
-        if (isMobile || isTablet || isSmallDesktop) {
+        if (isMobile || isTablet ) {
             // ✅ return 버튼이 없으면 강제로 추가
             if (!document.querySelector(".right-return-button")) {
                 console.log("📌 return 버튼이 없어서 강제로 추가함");

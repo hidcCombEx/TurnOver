@@ -3,8 +3,8 @@
 
 .left {
     position: relative;
-    width: 35.0%;
-    height: 50.0%;
+    width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,7 +42,7 @@
 /* 우측하단 동아리 리스트 */
 
 .clublist {
-    width: 50.0%;
+    width: 100%;
     height: auto;
     justify-content: flex-end;
     align-items: flex-end;
@@ -58,14 +58,14 @@
     display: flex;
     align-items: center;
     width: 550.0px;
-    height: 4.0%;
+    height: 10%;
     margin-bottom: 31.0px;
     gap: 12.0px;
     position: relative;
 }
 
 /* .clublist {
-    width: 50.0%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +76,7 @@
 .club {
     display: flex;
     align-items: center;
-    width: 50.0%;
+    width: 100%;
     max-width: 500.0px; 
     height: auto;
     min-height: 74.0px;
@@ -86,17 +86,17 @@
 
 
 .subtitle-arrow-container {
-    width: 22.5%;
+    width: 45%;
     /* 우측 비율 조정 */
-    height: 50.0%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .subtitle-arrow-container a {
-    width: 50.0%;
-    height: 50.0%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -106,7 +106,7 @@
 /* 좌측 라인 */
 .club .line {
     width: 10.0px;
-    height: 45.0%;
+    height: 90%;
     margin: auto 0;
     border-left: 2.5px solid #00AECC;
 }
@@ -116,7 +116,7 @@
 
 .club-info {
     position: relative;
-    width: 27.5%;
+    width: 55%;
     height: auto;
 
     display: flex;
@@ -129,7 +129,7 @@
 /* 소주제 정보 */
 
 .subtitle-info {
-    width: 50.0%;
+    width: 100%;
     height: auto;
     display: flex;
 }
@@ -140,7 +140,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50.0%;
+    height: 100%;
     padding-top: 25.0px;
 }
 
@@ -160,21 +160,21 @@
 /* 로고 크기 */
 .club .logoImage {
     position: absolute;
-    height: 2.0vh;
+    height: 3.0vh;
     padding-top: 5.0px;
     left: 0;
 }
 
-@media all and (max-width:1300.0px) {
+@media all and (max-width:1400.0px) {
 
     .left {
         flex-direction: column;
-        gap: 0.0px;
+        gap: 0px;
     }
 
 
     .club-info {
-        width: 20.0%;
+        width: 40%;
     }
 
     .club .logoImage {
@@ -182,7 +182,7 @@
     }
 
     .clublist {
-        height: 50.0%;
+        height: 100%;
         justify-content: center;
         align-items: flex-end;
         gap: 6.0px;
@@ -209,7 +209,7 @@
     }
 
     .club-info {
-        width: 20.0%;
+        width: 40%;
     }
 
     .club .logoImage {
@@ -218,8 +218,8 @@
  */
 
     .left {
-        width: 50.0%;
-        height: 50.0%;
+        width: 100%;
+        height: 100%;
         flex-direction: column;
     }
 
@@ -236,14 +236,14 @@
     }
 
     .club {
-        width: 50.0%;
-        max-height: 10.0%;
+        width: 100%;
+        max-height: 20%;
         margin-bottom: 31.0px;
     }
 
     .club .line {
         width: 5.0px;
-        height: 45.0%;
+        height: 90%;
         margin: auto 0;
         border-left: 2.0px solid #00AECC;
     }
@@ -275,7 +275,7 @@
 /* 우측 화살표 컨테이너 */
 
 .arrow-container {
-    width: 10.0%;
+    width: 20%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -284,7 +284,7 @@
 }
 
 .arrow svg {
-    width: 50.0%;
+    width: 100%;
     height: 40.0px;
     padding: 7.5px 7.5px;
     position: absolute;
@@ -310,8 +310,8 @@
 /* 우측(빈공간) */
 
 .right {
-    width: 50.0%;
-    height: 50.0%;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -320,57 +320,12 @@
 /* 미디어쿼리 */
 
 
-/*노트북 & 태블릿 가로 : 512.0px-639.5px*/
-@media all and (max-width: 1024.0px) {
-    .main-container {
-        padding: 5.0px 2.5px;
-    }
-
-    /* ======================== */
-    /* 좌측 */
-
-
-    .left {
-        width: 50.0%;
-        height: 50.0%;
-        flex-direction: column;
-    }
-
-    .left::-webkit-scrollbar {
-        width: 0.0px;
-        background: transparent;
-    }
-
-
-    .clublist {
-        justify-content: center;
-        align-items: flex-end;
-        gap: 6.0px;
-    }
-
-    .club {
-        width: 50.0%;
-        max-height: 10.0%;
-        margin-bottom: 31.0px;
-    }
-
-    .club .line {
-        width: 5.0px;
-        height: 45.0%;
-        margin: auto 0;
-        border-left: 2.0px solid #00AECC;
-    }
-
-
-
-}
-
 /*==================================================================*/
 /* 테블릿 가로, 테블릿 세로 (해상도 384.0px ~ 511.5px)*/
-@media all and (max-width:511.5px) {
+@media all and (max-width:1023px) {
 
     .main-container {
-        padding: 5.0px 2.5px;
+        padding: 10px 5px;
     }
 
     /* ======================== */
@@ -380,7 +335,7 @@
 
     .left {
         overflow-y: auto;
-        width: 50.0%;
+        width: 100%;
         flex-direction: column;
     }
 
@@ -396,20 +351,20 @@
     }
 
     .club {
-        width: 50.0%;
-        max-height: 10.0%;
+        width: 100%;
+        max-height: 20%;
         margin-bottom: 31.0px;
     }
 
     .club .line {
         width: 5.0px;
-        height: 45.0%;
+        height: 90%;
         margin: auto 0;
         border-left: 2.0px solid #00AECC;
     }
 
     .club-info {
-        width: 20.0%;
+        width: 40%;
     }
 
     .club-category,
@@ -433,7 +388,7 @@
 
 
     .title {
-        margin-top: 20.0px;
+        margin-top: 40.0px;
     }
 
     .title h1 {
@@ -453,10 +408,10 @@
 
 /*==================================================================*/
 /* 모바일 가로, 모바일 세로 (해상도 240.0px ~ 383.5px)*/
-@media all and (max-width:383.5px) {
+@media all and (max-width:767px) {
 
     .main-container {
-        padding: 5.0px 2.5px;
+        padding: 10px 5px;
     }
 
     /* ======================== */
@@ -464,8 +419,8 @@
 
 
     .left {
-        width: 50.0%;
-        height: 50.0%;
+        width: 100%;
+        height: 100%;
         flex-direction: column;
         gap: 30.0px;
     }
@@ -495,14 +450,14 @@
 
     .club .line {
         width: 1.5px;
-        height: 45.0%;
+        height: 90%;
         margin: auto 0;
         border-left: 1.0px solid #00AECC;
     }
 
     .club {
-        width: 50.0%;
-        max-height: 10.0%;
+        width: 100%;
+        max-height: 20%;
         /* margin-bottom: 31.0px; */
     }
 
@@ -512,7 +467,7 @@
     }
 
     .club-info {
-        width: 20.0%;
+        width: 40%;
     }
 
     .club .logoImage {
@@ -537,8 +492,9 @@
     }
 
     .arrow svg {
-        top: 0rem;
+        top: 1rem;
     }
+
 
 
     /* ======================== */
@@ -554,8 +510,8 @@
 
 
     .left {
-        width: 50.0%;
-        height: 50.0%;
+        width: 100%;
+        height: 100%;
         justify-content: space-between;
     }
 
@@ -585,7 +541,7 @@
 
     .club .line {
         width: 1.5px;
-        height: 45.0%;
+        height: 90%;
         margin: auto 0;
         border-left: 1.0px solid #00AECC;
     }
@@ -595,7 +551,7 @@
     }
 
     .club-info {
-        width: 20.0%;
+        width: 40%;
     }
 
     .club .logoImage {
@@ -630,10 +586,10 @@
 
 }
 
-@media all and (max-width:240.0px) {
+@media all and (max-width:480px) {
 
     .main-container {
-        padding: 5.0px 2.5px;
+        padding: 10px 5px;
     }
 
     /* ======================== */
@@ -641,8 +597,8 @@
 
 
     .left {
-        width: 50.0%;
-        height: 50.0%;
+        width: 100%;
+        height: 100%;
         flex-direction: column;
         gap: 20.0px;
     }
@@ -657,11 +613,11 @@
     }
 
     .title h1 {
-        font-size: 3rem;
+        font-size: 6rem;
     }
 
     .title h3 {
-        font-size: 1.7rem;
+        font-size: 3rem;
     }
 
 
@@ -672,45 +628,47 @@
 
     .club .line {
         width: 1.5px;
-        height: 45.0%;
+        height: 90%;
         margin: auto 0;
         border-left: 1.0px solid #00AECC;
     }
 
     .club {
-        width: 50.0%;
-        height: 32.5px;
+        width: 100%;
+        height: 60px;
         margin-bottom: 16.0px;
     }
 
     .club .club-info,
     .club .subtitle-info {
-        padding-top: 10.0px;
+        padding-top: 20.0px;
     }
 
 
     .category {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .club-info {
-        width: 20.0%;
+        width: 40%;
     }
 
     .club .logoImage {
-        height: 17.5px;
+        height: 3.0vh;
+        padding-top: 5.0px;
     }
 
     .club .subtitle {
         word-break: keep-all;
-        width: 6ch;
-        font-size: 1.5rem;
+        width: 12ch;
+        font-size: 2.5rem;
         margin-bottom: auto;
     }
 
 
+
     .arrow-container {
-        width: 30.0px;
+        width: 28.0px;
         height: auto;
         display: flex;
         justify-content: center;
@@ -719,7 +677,7 @@
     }
 
     .arrow svg {
-        top: 0rem;
+        top: 1rem;
     }
 
 }

@@ -132,11 +132,11 @@ nav ul {
 }
 
 nav ul li {
-    width: 250px;
+    width: 150px;
     height: auto;
     text-align: center;
     align-items: center;
-    padding: 10px 7px;
+    padding: 7px 7px;
     position: relative;
     transition: color 0.2s ease-in-out;
 }
@@ -195,65 +195,6 @@ nav ul .active {
 /*==================================================================*/
 /* 미디어쿼리 */
 
-@media all and (max-width: 2048px) {
-
-    html,
-    body {
-        font-size: 8px;
-    }
-
-
-    /* ======================== */
-    /* 메인 */
-
-    main {
-        height: calc(100vh - 100px - 50px);
-    }
-
-    /* ======================== */
-    /* 헤더 */
-
-    .header {
-        padding: 10px 0px;
-    }
-
-    .innerheader {
-        padding: 10px 15px;
-    }
-
-    .logo {
-        width: 200px;
-        height: auto;
-    }
-
-    nav ul li {
-        width: 150px;
-    }
-
-    /* ======================== */
-    /* 좌측 배경 */
-
-    .leftbg {
-        width: 100%;
-    }
-
-    .club-leftbg {
-        width: 100%;
-        height: auto;
-    }
-
-    .rightbg {
-        width: 0;
-    }
-
-    /* ======================== */
-    /* 푸터 */
-
-    .footer {
-        height: 50px;
-    }
-}
-
 
 /*==================================================================*/
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -261,7 +202,7 @@ nav ul .active {
 
     html,
     body {
-        font-size: 6px;
+        font-size: 10px;
     }
 
     /* ======================== */
@@ -322,7 +263,7 @@ nav ul .active {
 
     html,
     body {
-        font-size: 6px;
+        font-size: 10px;
     }
 
     /* ======================== */
@@ -412,8 +353,8 @@ nav ul .active {
     /* 메인 */
 
     main {
-        height: calc(100vh - 170px - 50px);
-        top: 170px;
+        height: calc(100vh - 150px - 50px);
+        top: 150px;
     }
 
 
@@ -421,8 +362,13 @@ nav ul .active {
     /* 헤더 */
 
     .header {
-        height: 170px;
-        padding: 10px 0px;
+        height: 150px;
+        padding: 0;
+        padding-top: 15px;
+    }
+
+    nav ul {
+        font-size: 1.5rem;
     }
 
     .innerheader {
