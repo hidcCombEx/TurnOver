@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Pretendard', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    font-size: 8px;
+}
+
+.left-scroll-container::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+main {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100px - 124px);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.main-container {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.left-scroll-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+}
+
+/*==================================================================*/
+/* 푸터 */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F4F4F4;
+    color: #A9A9A9;
+    height: 124px;
+    text-align: center;
+    padding: 20px 40px;
+
+}
+
+/*==================================================================*/
+/* 헤더 */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--dark-gray, #131313);
+    padding: 20px 0;
+}
+
+.innerheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+/*====================================*/
+/* 좌측 로고 */
+
+.logo {
+    flex-shrink: 0;
+    width: 266px;
+    height: 100%;
+    padding-top: 5px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.logo:hover {
+    filter: brightness(70%);
+}
+
+/*====================================*/
+/* 우측 탭 */
+
+nav {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    /* 오른쪽 정렬 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+nav ul li {
+    width: 250px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px 7px;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+}
+
+nav ul a:nth-child(2),
+nav ul a:nth-child(3) {
+    border-left: 1px solid #FAFBFB;
+}
+
+nav ul a {
+    color: #FAFBFB;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover,
+nav ul .active {
+    color: #00AECC;
+}
+
+/*==================================================================*/
+/* 배경 */
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.leftbg {
+    width: 70%;
+    height: 100%;
+    background-color: #FAFBFB;
+    background-image: url("images/content_bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.club-leftbg {
+    width: 70%;
+    height: 100%;
+    background-color: #FAFBFB;
+}
+
+.rightbg {
+    width: 30%;
+    height: 100%;
+    background-color: #BDECF3;
+}
+
+/*==================================================================*/
+/*==================================================================*/
+/* 미디어쿼리 */
+
+@media all and (max-width: 2048px) {
+
+    html,
+    body {
+        font-size: 8px;
+    }
+
+
+    /* ======================== */
+    /* 메인 */
+
+    main {
+        height: calc(100vh - 100px - 50px);
+    }
+
+    /* ======================== */
+    /* 헤더 */
+
+    .header {
+        padding: 10px 0px;
+    }
+
+    .innerheader {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+
+    nav ul li {
+        width: 150px;
+    }
+
+    /* ======================== */
+    /* 좌측 배경 */
+
+    .leftbg {
+        width: 100%;
+    }
+
+    .club-leftbg {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightbg {
+        width: 0;
+    }
+
+    /* ======================== */
+    /* 푸터 */
+
+    .footer {
+        height: 50px;
+    }
+}
+
+
+/*==================================================================*/
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (max-width:1023px) {
+
+    html,
+    body {
+        font-size: 6px;
+    }
+
+    /* ======================== */
+    /* 메인 */
+
+    main {
+        height: calc(100vh - 100px - 50px);
+    }
+
+    /* ======================== */
+    /* 헤더 */
+
+    .header {
+        padding: 10px 0px;
+    }
+
+    .innerheader {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+
+    nav ul li {
+        width: 150px;
+    }
+
+    /* ======================== */
+    /* 좌측 배경 */
+
+    .leftbg {
+        width: 100%;
+    }
+
+    .club-leftbg {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightbg {
+        width: 0;
+    }
+
+    /* ======================== */
+    /* 푸터 */
+
+    .footer {
+        height: 50px;
+    }
+
+}
+
+/*==================================================================*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+
+    html,
+    body {
+        font-size: 6px;
+    }
+
+    /* ======================== */
+    /* 메인 */
+
+    main {
+        height: calc(100vh - 170px - 50px);
+        top: 170px;
+    }
+
+
+    /* ======================== */
+    /* 헤더 */
+
+    .header {
+        height: 170px;
+        padding: 10px 0px;
+    }
+
+    .innerheader {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px 5px;
+    }
+
+    .logo {
+        width: 350px;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul a {
+        width: 33%;
+    }
+
+    nav ul li {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ======================== */
+    /* 좌측 배경 */
+
+    .leftbg {
+        width: 100%;
+    }
+
+    .club-leftbg {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightbg {
+        width: 0;
+    }
+
+    /* ======================== */
+    /* 푸터 */
+
+    .footer {
+        height: 50px;
+    }
+
+}
+
+
+
+/*==================================================================*/
+/* 소형 모바일*/
+@media all and (max-width:480px) {
+
+    html,
+    body {
+        font-size: 6px;
+    }
+
+    /* ======================== */
+    /* 메인 */
+
+    main {
+        height: calc(100vh - 170px - 50px);
+        top: 170px;
+    }
+
+
+    /* ======================== */
+    /* 헤더 */
+
+    .header {
+        height: 170px;
+        padding: 10px 0px;
+    }
+
+    .innerheader {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px 5px;
+    }
+
+    .logo {
+        width: 300px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul a {
+        width: 33%;
+    }
+
+    nav ul li {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ======================== */
+    /* 좌측 배경 */
+
+    .leftbg {
+        width: 100%;
+    }
+
+    .club-leftbg {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightbg {
+        width: 0;
+    }
+
+    /* ======================== */
+    /* 푸터 */
+
+    .footer {
+        height: 50px;
+    }
+
+}
