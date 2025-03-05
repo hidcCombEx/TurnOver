@@ -1,0 +1,725 @@
+/*==================================================================*/
+/* 좌측 */
+
+.left {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    /* overflow-y: auto; */
+}
+
+/*==================================================================*/
+/* 좌측상단 Project, 작품 리스트 컨테이터 */
+
+.title {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 112px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.title h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+.title h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/*==================================================================*/
+/* 우측하단 동아리 리스트 */
+
+.clublist {
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* background-color: #ffe2e2; */
+} 
+
+/* 동아리 1개 컨테이너 */
+.club {
+    display: flex;
+    align-items: center;
+    width: 1100px;
+    height: 8%;
+    margin-bottom: 62px;
+    gap: 24px;
+    position: relative;
+}
+
+/* .clublist {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.club {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; 
+    height: auto;
+    min-height: 148px;
+    margin-bottom: 20px;
+    gap: 16px;
+} */
+
+
+.subtitle-arrow-container {
+    width: 45%;
+    /* 우측 비율 조정 */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subtitle-arrow-container a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*====================================*/
+/* 좌측 라인 */
+.club .line {
+    width: 20px;
+    height: 90%;
+    margin: auto 0;
+    border-left: 5px solid #00AECC;
+}
+
+/*====================================*/
+/* 동아리 정보 */
+
+.club-info {
+    position: relative;
+    width: 55%;
+    height: auto;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* 좌측 비율 조정 */
+}
+
+/*====================================*/
+/* 소주제 정보 */
+
+.subtitle-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* 각 덩어리 내부에서 flex 관리 */
+.club .club-info,
+.club .subtitle-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 50px;
+}
+
+
+/* 동아리 분류, Title 텍스트 스타일 */
+.club-category,
+.subtitle-category {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 0;
+    font-size: 1.4rem;
+    color: #A9A9A9;
+}
+
+/* 로고 크기 */
+.club .logoImage {
+    position: absolute;
+    height: 4vh;
+    padding-top: 10px;
+    left: 0;
+}
+
+@media all and (max-width:2600px) {
+
+    .left {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+
+    .club-info {
+        width: 40%;
+    }
+
+    .club .logoImage {
+        height: 70px;
+    }
+
+    .clublist {
+        height: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 12px;
+    }
+
+    .club .subtitle {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .club .club-info, .club .subtitle-info {
+        padding-top: 60px;
+    }
+}
+
+@media all and (max-width:1800px) {
+
+    /* .left {
+        flex-direction: column;
+    }
+
+    .club {
+        width: 800px;
+    }
+
+    .club-info {
+        width: 40%;
+    }
+
+    .club .logoImage {
+        height: 60px;
+    }
+ */
+
+    .left {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .left::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+
+    .clublist {
+        justify-content: center;
+        align-items: flex-end;
+        gap: 12px;
+    }
+
+    .club {
+        width: 100%;
+        max-height: 20%;
+        margin-bottom: 62px;
+    }
+
+    .club .line {
+        width: 10px;
+        height: 90%;
+        margin: auto 0;
+        border-left: 4px solid #00AECC;
+    }
+}
+
+/* 소주제 제목 텍스트 스타일 */
+.club .subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.subtitle-arrow-container:hover .subtitle {
+    color: #00AECC;
+    transform: scale(1.02);
+}
+
+.subtitle-arrow-container a,
+.subtitle-arrow-container a:visited,
+.subtitle-arrow-container a:active {
+    color: var(--dark-gray, #131313) !important;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*====================================*/
+/* 우측 화살표 컨테이너 */
+
+.arrow-container {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.arrow svg {
+    width: 100%;
+    height: 80px;
+    padding: 15px 15px;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.subtitle-arrow-container:hover svg {
+    transform: translateX(0.3rem);
+    cursor: pointer;
+}
+
+.arrow svg path {
+    transition: stroke 0.2s ease-in-out;
+}
+
+.subtitle-arrow-container:hover svg path {
+    stroke: #00AECC;
+}
+
+/*==================================================================*/
+/* 우측(빈공간) */
+
+.right {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*==================================================================*/
+/*==================================================================*/
+/* 미디어쿼리 */
+
+
+/*노트북 & 태블릿 가로 : 1024px-1279px*/
+@media all and (max-width: 2048px) {
+    .main-container {
+        padding: 10px 5px;
+    }
+
+    /* ======================== */
+    /* 좌측 */
+
+
+    .left {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .left::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+
+    .clublist {
+        justify-content: center;
+        align-items: flex-end;
+        gap: 12px;
+    }
+
+    .club {
+        width: 100%;
+        max-height: 20%;
+        margin-bottom: 62px;
+    }
+
+    .club .line {
+        width: 10px;
+        height: 90%;
+        margin: auto 0;
+        border-left: 4px solid #00AECC;
+    }
+
+
+
+}
+
+/*==================================================================*/
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (max-width:1023px) {
+
+    .main-container {
+        padding: 10px 5px;
+    }
+
+    /* ======================== */
+    /* 좌측 */
+
+
+
+    .left {
+        overflow-y: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .left::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+    .clublist {
+        justify-content: center;
+        align-items: flex-end;
+        gap: 12px;
+    }
+
+    .club {
+        width: 100%;
+        max-height: 20%;
+        margin-bottom: 62px;
+    }
+
+    .club .line {
+        width: 10px;
+        height: 90%;
+        margin: auto 0;
+        border-left: 4px solid #00AECC;
+    }
+
+    .club-info {
+        width: 40%;
+    }
+
+    .club-category,
+    .subtitle-category {
+        font-size: 1.7rem;
+    }
+
+    .club .logoImage {
+        height: 50px;
+    }
+
+    .club .subtitle {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .arrow svg {
+        top: 1.5rem;
+    }
+
+
+
+    .title {
+        margin-top: 40px;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title h3 {
+        font-size: 1.7rem;
+    }
+
+    /* ======================== */
+    /* 우측 */
+
+
+
+}
+
+/*==================================================================*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+
+    .main-container {
+        padding: 10px 5px;
+    }
+
+    /* ======================== */
+    /* 좌측 */
+
+
+    .left {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .left::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+    .title {
+        margin-top: 40px;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title h3 {
+        font-size: 1.7rem;
+    }
+
+
+    .clublist {
+        align-items: flex-end;
+        gap: 12px;
+    }
+
+    .club .line {
+        width: 3px;
+        height: 90%;
+        margin: auto 0;
+        border-left: 2px solid #00AECC;
+    }
+
+    .club {
+        width: 100%;
+        max-height: 20%;
+        /* margin-bottom: 62px; */
+    }
+
+
+    .category {
+        font-size: 1rem;
+    }
+
+    .club-info {
+        width: 40%;
+    }
+
+    .club .logoImage {
+        height: 35px;
+    }
+
+    .club .subtitle {
+        word-break: keep-all;
+        width: 6ch;
+        font-size: 1.5rem;
+        margin-bottom: auto;
+    }
+
+
+    .arrow-container {
+        width: 60px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .arrow svg {
+        top: 0rem;
+    }
+
+
+    /* ======================== */
+    /* 우측 */
+
+
+
+
+
+    /* .main-container {
+        padding: 10px 5px;
+    }
+
+
+    .left {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .title {
+        margin-top: 40px;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title h3 {
+        font-size: 1.7rem;
+    }
+
+
+    .clublist {
+        gap: 12px;
+    }
+
+    .club {
+        width: 60vw;
+        height: 10vh;
+        margin-bottom: 36px;
+    }
+
+
+    .club .line {
+        width: 3px;
+        height: 90%;
+        margin: auto 0;
+        border-left: 2px solid #00AECC;
+    }
+
+    .category {
+        font-size: 1rem;
+    }
+
+    .club-info {
+        width: 40%;
+    }
+
+    .club .logoImage {
+        height: 35px;
+    }
+
+    .club .subtitle {
+        word-break: keep-all;
+        width: 6ch;
+        font-size: 1.5rem;
+        margin-bottom: auto;
+    }
+
+
+    .arrow-container {
+        width: 60px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .arrow svg {
+        top: 0rem;
+    } */
+
+    /* ======================== */
+    /* 우측 */
+
+
+}
+
+@media all and (max-width:480px) {
+
+    .main-container {
+        padding: 10px 5px;
+    }
+
+    /* ======================== */
+    /* 좌측 */
+
+
+    .left {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+    .title {
+        margin-top: 40px;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .title h3 {
+        font-size: 1.7rem;
+    }
+
+
+    .clublist {
+        align-items: flex-end;
+        gap: 12px;
+    }
+
+    .club .line {
+        width: 3px;
+        height: 90%;
+        margin: auto 0;
+        border-left: 2px solid #00AECC;
+    }
+
+    .club {
+        width: 100%;
+        height: 65px;
+        margin-bottom: 32px;
+    }
+
+    .club .club-info,
+    .club .subtitle-info {
+        padding-top: 20px;
+    }
+
+
+    .category {
+        font-size: 1rem;
+    }
+
+    .club-info {
+        width: 40%;
+    }
+
+    .club .logoImage {
+        height: 35px;
+    }
+
+    .club .subtitle {
+        word-break: keep-all;
+        width: 6ch;
+        font-size: 1.5rem;
+        margin-bottom: auto;
+    }
+
+
+    .arrow-container {
+        width: 60px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .arrow svg {
+        top: 0rem;
+    }
+
+}
