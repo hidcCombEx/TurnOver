@@ -3,8 +3,8 @@
 
 .left {
     position: relative;
-    width: 70%;
-    height: 100%;
+    width: 35.0%;
+    height: 50.0%;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -15,7 +15,7 @@
 /* 좌측 상단 */
 
 .left-club-info {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -26,11 +26,11 @@
 /* 동아리 소주제, 참여자 전체 컨테이너 */
 
 .club-left {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     display: flex;
     flex-direction: row;
-    margin-top: 112px;
+    margin-top: 56.0px;
     margin-bottom: 7rem;
 }
 
@@ -44,14 +44,14 @@
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    width: 50%;
-    height: 100%;
+    width: 25.0%;
+    height: 50.0%;
     margin: auto 0 0 0;
 }
 
 .title {
     white-space: nowrap;
-    width: 100%;
+    width: 50.0%;
     height: auto;
     text-align: left;
 }
@@ -78,7 +78,7 @@
 /* 작품 모음(그리드) */
 
 #project-list {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -98,7 +98,7 @@
 
 /* 한 작품 */
 .project-item {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     background-color: #F4F4F4;
     text-align: center;
@@ -109,9 +109,9 @@
 /* project item 상단 부분(이미지) */
 
 .thumbnail-container {
-    width: 100%;
+    width: 50.0%;
     position: relative;
-    padding-top: 75%;
+    padding-top: 37.5%;
     overflow: hidden;
 }
 
@@ -121,8 +121,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 50.0%;
+    height: 50.0%;
     object-fit: cover;
     filter: brightness(1);
     transition: transform 0.2s ease-in-out;
@@ -149,7 +149,7 @@
 /* project item 하단 부분(텍스트) */
 
 .project-info-container {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     padding: 0.5rem 1.4rem;
     display: flex;
@@ -164,7 +164,7 @@
 }
 
 .project-info-container-top {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -188,7 +188,7 @@
     font-weight: 600;
     margin: 1rem 0;
     color: var(--dark-gray, #131313);
-    max-width: 100%;
+    max-width: 50.0%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -218,20 +218,20 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 30%;
-    height: 100%;
+    width: 15.0%;
+    height: 50.0%;
     display: flex;
     overflow-y: auto;
 }
 
 .right-scroll-container::-webkit-scrollbar {
-    width: 0px;
+    width: 0.0px;
     background: transparent;
 }
 
 .right {
-    width: 100%;
-    height: 100%;
+    width: 50.0%;
+    height: 50.0%;
 }
 
 
@@ -239,7 +239,7 @@
 /* 우측-프로젝트 상세 */
 
 .project-detail {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -248,8 +248,8 @@
 /*====================================*/
 /* 프로젝트 상세 상단 라벨 */
 .project-detail-info {
-    width: 100%;
-    min-height: 300px;
+    width: 50.0%;
+    min-height: 150.0px;
     background: var(--dark-gray, #131313);
     padding: 6rem 3rem 4rem 3rem;
     display: flex;
@@ -258,8 +258,8 @@
 }
 
 .project-detail-info-bottom {
-    width: 100%;
-    min-height: 82px;
+    width: 50.0%;
+    min-height: 41.0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -272,7 +272,7 @@
 }
 
 .project-detail-info h2 {
-    width: 80%;
+    width: 40.0%;
     word-wrap: break-word;
     word-break: break-word;
     overflow-wrap: break-word;
@@ -291,7 +291,7 @@
 /* 미디어 컨테이너 */
 .media-container {
     position: relative;
-    width: 100%;
+    width: 50.0%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -302,7 +302,7 @@
 /* 프로젝트 상세 이미지 */
 
 .detail-image {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     object-fit: cover;
     user-drag: none;
@@ -313,7 +313,7 @@
 /* 프로젝트 상세 비디오 */
 
 .detail-video {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     object-fit: cover;
     user-drag: none;
@@ -355,7 +355,7 @@
 .contact-line {
     width: 5rem;
     border: none;
-    border-top: 3px solid black;
+    border-top: 1.5px solid black;
     margin-bottom: 1.5rem;
 }
 
@@ -404,7 +404,7 @@
 /*필터 버튼 스타일 */
 
 .search-bar {
-    width: 100%;
+    width: 50.0%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -427,9 +427,9 @@
     grid-template-columns: repeat(5, auto);
     /* 3개의 컬럼 */
     justify-content: flex-start;
-    gap: 10px;
+    gap: 5.0px;
     /* 버튼 간격 유지 */
-    width: 100%;
+    width: 50.0%;
 }
 
 
@@ -451,7 +451,7 @@
 
 .filter-btn {
     white-space: nowrap;
-    padding: 10px 20px;
+    padding: 5.0px 10.0px;
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--lightGray, #A9A9A9);
@@ -482,7 +482,7 @@
 
 #search-container {
     width: 25rem;
-    height: 100%;
+    height: 50.0%;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -490,10 +490,10 @@
 }
 
 #search-input {
-    width: 100%;
+    width: 50.0%;
     padding: 0 0.5rem;
     padding-left: 1rem;
-    height: 100%;
+    height: 50.0%;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--lightGray, #131313);
@@ -553,19 +553,19 @@
 }
 
 
-@media all and (max-width:2000px) {
+@media all and (max-width:1000.0px) {
     #filter-buttons {
         grid-template-columns: repeat(3, auto);
     }
 
     .search-bar {
         flex-direction: column;
-        gap: 10px;
+        gap: 5.0px;
     }
 
     #search-container {
-        width: 100%;
-        padding: 10px 10px;
+        width: 50.0%;
+        padding: 5.0px 5.0px;
 
     }
 }
@@ -575,15 +575,15 @@
 /*==================================================================*/
 /* 미디어쿼리 */
 
-@media all and (max-width: 2048px) {
+@media all and (max-width: 1024.0px) {
 
     .main-container {
-        padding: 10px 5px;
+        padding: 5.0px 2.5px;
     }
 
     .left {
         overflow-y: auto;
-        width: 100%;
+        width: 50.0%;
     }
 
     /* ======================== */
@@ -593,17 +593,17 @@
     .right-scroll-container {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -50.0%;
         /* 기본적으로 화면 밖 */
-        width: 100%;
-        height: 100vh;
+        width: 50.0%;
+        height: 50.0vh;
         background-color: #BDECF3;
         transition: transform 0.3s ease-in-out;
         z-index: 1000;
     }
 
     .right-scroll-container.active {
-        transform: translateX(-100%);
+        transform: translateX(-50.0%);
         /* 화면 안으로 등장 */
     }
 
@@ -619,17 +619,17 @@
     }
 
     .right-return-button {
-        width: 10%;
+        width: 5.0%;
         display: flex;
         align-items: center;
         cursor: pointer;
-        padding-right: 30px;
+        padding-right: 15.0px;
 
     }
 
     .right-return-button svg {
-        width: 18px;
-        height: 100px;
+        width: 9.0px;
+        height: 50.0px;
     }
 
 
@@ -646,11 +646,11 @@
 }
 
 /*==================================================================*/
-/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
-@media all and (max-width:1023px) {
+/* 테블릿 가로, 테블릿 세로 (해상도 384.0px ~ 511.5px)*/
+@media all and (max-width:511.5px) {
 
     .main-container {
-        padding: 10px 5px;
+        padding: 5.0px 2.5px;
     }
 
     /* ======================== */
@@ -658,17 +658,17 @@
 
     .left {
         overflow-y: auto;
-        width: 100%;
+        width: 50.0%;
     }
 
     .left::-webkit-scrollbar {
-        width: 0px;
+        width: 0.0px;
         background: transparent;
     }
 
 
     .title {
-        margin-top: 40px;
+        margin-top: 20.0px;
     }
 
     .title h1 {
@@ -680,20 +680,20 @@
     }
 
     .clublist {
-        gap: 12px;
+        gap: 6.0px;
     }
 
     .club {
-        width: 400px;
-        height: 70px;
-        margin-bottom: 36px;
+        width: 200.0px;
+        height: 35.0px;
+        margin-bottom: 18.0px;
     }
 
     .club .line {
-        width: 3px;
-        height: 90%;
+        width: 1.5px;
+        height: 45.0%;
         margin: auto 0;
-        border-left: 3px solid #00AECC;
+        border-left: 1.5px solid #00AECC;
     }
 
     .category {
@@ -701,11 +701,11 @@
     }
 
     .club-info {
-        width: 40%;
+        width: 20.0%;
     }
 
     .club .logoImage {
-        height: 35px;
+        height: 17.5px;
     }
 
     .club .subtitle {
@@ -719,32 +719,32 @@
     /* 리턴바 */
 
     .return-bar {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 20.0px;
+        margin-bottom: 20.0px;
     }
 
     .returnarrow svg {
-        width: 35px;
+        width: 17.5px;
     }
 
     .club-left {
         flex-direction: column;
-        gap: 70px;
-        margin-top: 40px;
+        gap: 35.0px;
+        margin-top: 20.0px;
     }
 
 
     .left-scroll-container {
         /* background: #ff3a17; */
-        width: 100%;
+        width: 50.0%;
         overflow-y: visible !important;
         height: auto !important;
         /* 자동으로 늘어나게 설정 */
-        margin-bottom: 80px;
+        margin-bottom: 40.0px;
     }
 
     .projects-container {
-        width: 100%;
+        width: 50.0%;
     }
 
     #project-list {
@@ -772,17 +772,17 @@
     .right-scroll-container {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -50.0%;
         /* 기본적으로 화면 밖 */
-        width: 100%;
-        height: 100vh;
+        width: 50.0%;
+        height: 50.0vh;
         background-color: #BDECF3;
         transition: transform 0.3s ease-in-out;
         z-index: 1000;
     }
 
     .right-scroll-container.active {
-        transform: translateX(-100%);
+        transform: translateX(-50.0%);
         /* 화면 안으로 등장 */
     }
 
@@ -798,17 +798,17 @@
     }
 
     .right-return-button {
-        width: 10%;
+        width: 5.0%;
         display: flex;
         align-items: center;
         cursor: pointer;
-        padding-right: 30px;
+        padding-right: 15.0px;
 
     }
 
     .right-return-button svg {
-        width: 18px;
-        height: 100px;
+        width: 9.0px;
+        height: 50.0px;
     }
 
 
@@ -822,12 +822,12 @@
 
 
     .project-detail-info {
-        min-height: 200px;
+        min-height: 100.0px;
     }
 
     .contact-line {
         width: 4rem;
-        border-top: 1.5px solid black;
+        border-top: 0.75px solid black;
     }
 
     .project-detail p {
@@ -843,17 +843,17 @@
 
     .search-bar {
         flex-direction: column;
-        gap: 10px;
+        gap: 5.0px;
     }
 
     .filter-btn {
         display: grid;
-        padding: 5px 10px;
+        padding: 2.5px 5.0px;
         font-size: 1.2rem;
     }
 
     #search-container {
-        width: 100%;
+        width: 50.0%;
         padding: 0;
     }
 
@@ -868,11 +868,11 @@
 }
 
 /*==================================================================*/
-/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-@media all and (max-width:767px) {
+/* 모바일 가로, 모바일 세로 (해상도 240.0px ~ 383.5px)*/
+@media all and (max-width:383.5px) {
 
     .main-container {
-        padding: 10px 5px;
+        padding: 5.0px 2.5px;
     }
 
     /* ======================== */
@@ -880,17 +880,17 @@
 
     .left {
         overflow-y: auto;
-        gap: 20px;
+        gap: 10.0px;
     }
 
     .left::-webkit-scrollbar {
-        width: 0px;
+        width: 0.0px;
         background: transparent;
     }
 
 
     .title {
-        margin-top: 0px;
+        margin-top: 0.0px;
     }
 
     .title h1 {
@@ -905,47 +905,47 @@
     /* 리턴바 */
 
     .return-bar {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 20.0px;
+        margin-bottom: 20.0px;
     }
 
     .returnarrow svg {
-        width: 35px;
+        width: 17.5px;
     }
 
     .club-left {
         flex-direction: column;
-        gap: 70px;
-        margin-top: 40px;
+        gap: 35.0px;
+        margin-top: 20.0px;
         margin-bottom: 5rempx;
     }
 
     .club-desc,
     .club-participants {
-        width: 90%;
+        width: 45.0%;
     }
 
     .subtitle-and-logo .logoImage {
         width: auto;
-        height: 30px;
+        height: 15.0px;
         margin: auto 0 1rem auto;
     }
 
     .participants {
-        max-height: 400px;
+        max-height: 200.0px;
     }
 
     .left-scroll-container {
         /* background: #ff3a17; */
-        width: 100%;
+        width: 50.0%;
         overflow-y: visible !important;
         height: auto !important;
         /* 자동으로 늘어나게 설정 */
-        margin-bottom: 80px;
+        margin-bottom: 40.0px;
     }
 
     .projects-container {
-        width: 100%;
+        width: 50.0%;
     }
 
     #project-list {
@@ -973,17 +973,17 @@
     .right-scroll-container {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -50.0%;
         /* 기본적으로 화면 밖 */
-        width: 100%;
-        height: 100vh;
+        width: 50.0%;
+        height: 50.0vh;
         background-color: #BDECF3;
         transition: transform 0.3s ease-in-out;
         z-index: 1000;
     }
 
     .right-scroll-container.active {
-        transform: translateX(-100%);
+        transform: translateX(-50.0%);
         /* 화면 안으로 등장 */
     }
 
@@ -1000,17 +1000,17 @@
 
 
     .right-return-button {
-        width: 12%;
+        width: 6.0%;
         display: flex;
         align-items: center;
         cursor: pointer;
-        padding-right: 30px;
+        padding-right: 15.0px;
 
     }
 
     .right-return-button svg {
-        width: 18px;
-        height: 100px;
+        width: 9.0px;
+        height: 50.0px;
     }
 
 
@@ -1025,12 +1025,12 @@
 
 
     .project-detail-info {
-        min-height: 200px;
+        min-height: 100.0px;
     }
 
     .contact-line {
         width: 4rem;
-        border-top: 1.5px solid black;
+        border-top: 0.75px solid black;
     }
 
     .project-detail p {
@@ -1046,18 +1046,18 @@
 
     .search-bar {
         flex-direction: column;
-        gap: 10px;
+        gap: 5.0px;
     }
 
     .filter-btn {
         display: grid;
-        padding: 5px 10px;
+        padding: 2.5px 5.0px;
         font-size: 1.2rem;
     }
 
     #search-container {
-        width: 100%;
-        height: 40px;
+        width: 50.0%;
+        height: 20.0px;
         padding: 0;
     }
 
@@ -1077,9 +1077,9 @@
         grid-template-rows: repeat(2, auto);
         /* 2개의 행 */
         justify-content: flex-start;
-        gap: 10px;
+        gap: 5.0px;
         /* 버튼 간격 유지 */
-        width: 100%;
+        width: 50.0%;
     }
 
     /* 첫 번째 줄 2개 */
