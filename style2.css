@@ -47,8 +47,8 @@ main {
     justify-content: space-between;
     align-items: stretch;
     margin: 0 auto;
-
-    background-color: aquamarine;
+/* 
+    background-color: aquamarine; */
 }
 
 
@@ -59,8 +59,8 @@ main {
 .leftbg {
     width: 70%;
     height: 100%;
-    background-color: aqua;
-    /* background-color: #FAFBFB; */
+    /* background-color: aqua; */
+    background-color: #FAFBFB;
     background-image: url("images/content_bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     padding-left: 5vw;
-    background-color: #87ff5b;
+    /* background-color: #87ff5b; */
 
 }
 
