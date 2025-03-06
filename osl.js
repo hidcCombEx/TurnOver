@@ -3,7 +3,7 @@ window.oslProjects = [
         club: "오픈소스랩",
         title: "전환점",
         author: [],
-        thumbnail: `images/thumbnail/OSL/오소랩.png`,
+        thumbnail: `images/thumbnail/OSL/osl.png`,
         media: [
             "images/detail_image/OSL/1.png",
             "images/detail_image/OSL/2.png",
