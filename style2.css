@@ -60,11 +60,6 @@ main {
     width: 70%;
     height: 100%;
     /* background-color: aqua; */
-    background-color: #FAFBFB;
-    background-image: url("images/content_bg.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top left;
 }
 
 .rightbg {

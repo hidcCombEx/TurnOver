@@ -1,7 +1,13 @@
 /*==================================================================*/
 /* 좌측 */
 
-
+.leftbg {
+    background-color: #FAFBFB;
+    background-image: url("images/content_bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
 
 /*==================================================================*/
 /* 좌측상단 Project, 작품 리스트 컨테이터 */

@@ -1,6 +1,10 @@
 /*==================================================================*/
 /* 좌측*/
 
+.leftbg {
+    background-color: #FAFBFB;
+}
+
 .left {
     flex-direction: column;
     /* padding-left: 5vw; */
