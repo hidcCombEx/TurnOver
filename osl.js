@@ -53,6 +53,9 @@ window.oslProjects = [
             "images/detail_image/OSL/박준민/5.png"
         ],
         descText: `POL(Paradox of Light)은 인생에 있어 개인적인 은사님을 만나기 전까지의 경험을 3D 액션 어드벤처 게임으로 표현한 작품이다.
+        <br> <br>
+        모든 것이 정해져 있는 정적인 공간에서 기연을 통해 틀에 얽매이지 않는 세상으로 나아간다는 희망적인 내용을 담은
+작품이다. 하지만 그 세상에는 또 다른 의미가 숨겨져 있다.
         `,
         contact: {}
     },
