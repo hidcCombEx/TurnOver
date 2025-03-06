@@ -23,10 +23,10 @@ window.oslProjects = [
         club: "오픈소스랩",
         title: "두려움 그 너머",
         author: "김효진",
-        thumbnail: `images/thumbnail/OSL/김효진.png`,
+        thumbnail: `images/thumbnail/OSL/hyojin.png`,
         media: [
-            "images/detail_image/OSL/김효진/김효진_1.png",
-            "images/detail_image/OSL/김효진/김효진_2.png"
+            "images/detail_image/OSL/hyojin/hyojin_1.png",
+            "images/detail_image/OSL/hyojin/hyojin_2.png"
         ],
         descText: `<a href="https://beyond-the-fear.vercel.app/" target='_blank'>https://beyond-the-fear.vercel.app/</a>
         <br>
@@ -44,13 +44,13 @@ window.oslProjects = [
         club: "오픈소스랩",
         title: "폴",
         author: "박준민",
-        thumbnail: `images/thumbnail/OSL/박준민.png`,
+        thumbnail: `images/thumbnail/OSL/junmin.png`,
         media: [
-            "images/detail_image/OSL/박준민/1.png",
-            "images/detail_image/OSL/박준민/2.png",
-            "images/detail_image/OSL/박준민/3.png",
-            "images/detail_image/OSL/박준민/4.png",
-            "images/detail_image/OSL/박준민/5.png"
+            "images/detail_image/OSL/junmin/1.png",
+            "images/detail_image/OSL/junmin/2.png",
+            "images/detail_image/OSL/junmin/3.png",
+            "images/detail_image/OSL/junmin/4.png",
+            "images/detail_image/OSL/junmin/5.png"
         ],
         descText: `POL(Paradox of Light)은 인생에 있어 개인적인 은사님을 만나기 전까지의 경험을 3D 액션 어드벤처 게임으로 표현한 작품이다.
         <br> <br>
@@ -63,11 +63,11 @@ window.oslProjects = [
         club: "오픈소스랩",
         title: "Particle",
         author: "유예린",
-        thumbnail: "images/thumbnail/OSL/유예린.png",
+        thumbnail: "images/thumbnail/OSL/yerin.png",
         media: [
-            "images/detail_image/OSL/유예린/image 4.png",
-            "images/detail_image/OSL/유예린/image 5.png",
-            "images/detail_image/OSL/유예린/image 6.png"
+            "images/detail_image/OSL/yerin/image 4.png",
+            "images/detail_image/OSL/yerin/image 5.png",
+            "images/detail_image/OSL/yerin/image 6.png"
         ],
         descText: `Particle은 나의 행동에 따라 변화하는 세상의 입자를 시각적으로 표현한 작품이다.`,
         contact: {}
