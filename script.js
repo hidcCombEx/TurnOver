@@ -80,15 +80,20 @@ function waitForElement(selector, callback) {
 function addReturnButtonEvent() {
     const returnButton = document.querySelector(".right-return-button");
     const rightScrollContainer = document.querySelector(".right-scroll-container");
+    const projectItems = document.querySelectorAll(".project-item"); // ✅ 모든 프로젝트 아이템 가져오기
 
     if (returnButton) {
         returnButton.addEventListener("click", function () {
             console.log("📌 right-return-button 클릭됨, 패널 닫기");
+
+            // ✅ 모든 프로젝트 아이템에서 `clicked-project` 클래스 제거
+            projectItems.forEach(item => item.classList.remove("clicked-project"));
+
+            // ✅ 우측 패널 닫기
             rightScrollContainer.classList.remove("active");
         });
     }
 }
-
 
 //============================================
 // 돌아가기 버튼 제거 함수
