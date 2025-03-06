@@ -3,9 +3,9 @@ window.hipdProjects = [
         club: "하이피디",
         title: "Cleaf",
         author: "강채민, 이나윤, 조성혜",
-        thumbnail: `images/thumbnail/hipd/HiPD_강채민,이나윤,조성혜_cleaf_썸네일.png`,
+        thumbnail: `images/thumbnail/hipd/cleaf.png`,
         media: [
-            "images/detail_image/hipd/HiPD_강채민,이나윤,조성혜_cleaf_썸네일.png"
+            "images/detail_image/hipd/cleaf.png"
         ],
         descText: `"Cleaf"는 청각장애인을 위해 소리를 듣고 수어를 음성으로 변환해 주는 카메라 분리형 디스플레이입니다.
         <br>
@@ -26,9 +26,9 @@ Cleaf는 청각장애인이 소통의 한계를 넘어 자신의 언어로 더�
         club: "하이피디",
         title: "樓 (루, Ru)",
         author: "허홍, 박채연, 조현기",
-        thumbnail: `images/thumbnail/hipd/HiPD_허홍,박채연,조현기_樓 (루, Ru)_썸네일.jpeg`,
+        thumbnail: `images/thumbnail/hipd/ru.jpeg`,
         media: [
-            "images/detail_image/hipd/HiPD_허홍,박채연,조현기_樓 (루, Ru)_썸네일.jpeg"
+            "images/detail_image/hipd/ru.jpeg"
         ],
         descText: `‘樓(루)’는 전통 누각의 사색과 균형 잡힌 삶의 경험을 현대적으로 재해석한 프로젝트다. 현대인의 바쁜 일상 속에서 잃어버린 자연스러운 '아보하(아주 보통의 하루)'를 회복하기 위해, 문인들이 누각에서 자연과 하나 되어 사색했던 공간의 역할을 의자 디자인에 녹여내어, 몸과 마음을 지탱하며 잠시 멈춰 서서 진정한 하루의 흐름을 느낄 수 있는 새로운 공간을 제공한다.`,
         contact: {}
