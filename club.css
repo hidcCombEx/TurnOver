@@ -1,23 +1,40 @@
 /*==================================================================*/
 /* 좌측-동아리, 참여인원, 작품*/
-
+/* 
 .left {
     position: relative;
     width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
+} */
+
+
+/* .left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5vw;
+    background-color: #00AECC;
+} */
+
+.left {
+    flex-direction: column;
+    /* padding-left: 5vw; */
 }
 
 /*==================================================================*/
 /* 좌측 상단(돌아가기 바 + 동아리 소주제, 참여자) */
 
 .left-club-info {
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
 }
 
 /* 돌아가기 바 */
@@ -174,7 +191,7 @@
     font-size: 1.7rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.7rem;
+    line-height: 3rem;
     word-break: keep-all;
     padding-right: 5rem;
 }
@@ -384,25 +401,18 @@
 /*==================================================================*/
 /* 메인 컨테이너-우측(세부정보) */
 
-.right-scroll-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
+.right {
+
     display: flex;
     overflow-y: auto;
 }
 
-.right-scroll-container::-webkit-scrollbar {
+.right::-webkit-scrollbar {
     width: 0.0px;
     background: transparent;
 }
 
-.right {
-    width: 100%;
-    height: 100%;
-}
+
 
 
 /*==================================================================*/
@@ -419,7 +429,8 @@
 /* 프로젝트 상세 상단 라벨 */
 .project-detail-info {
     width: 100%;
-    min-height: 150.0px;
+    height: auto;
+    /* min-height: 150.0px; */
     background: var(--dark-gray, #131313);
     padding: 6rem 3rem 4rem 3rem;
     display: flex;
@@ -429,7 +440,8 @@
 
 .project-detail-info-bottom {
     width: 100%;
-    min-height: 40.0px;
+    min-height: 50.0px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -581,9 +593,9 @@
 /* 테블릿 가로, 테블릿 세로 (해상도 384.0px ~ 511.5px)*/
 @media all and (max-width:1023px) {
 
-    .main-container {
+    /* .main-container {
         padding: 10px 5px;
-    }
+    } */
 
     /* ======================== */
     /* 좌측 */
@@ -651,8 +663,7 @@
     /* 리턴바 */
 
     .return-bar {
-        margin-top: 5.0px;
-        margin-bottom: 20.0px;
+
 
         display: flex;
         flex-direction: row;
@@ -666,12 +677,18 @@
 
     .club-left {
         flex-direction: column;
-        gap: 35.0px;
+        gap: 60.0px;
     }
 
     .club-desc,
     .club-participants {
         width: 90%;
+    }
+
+    .subtitle-desc {
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+        /* padding-right: 5rem; */
     }
 
     .subtitle-and-logo .logoImage {
@@ -680,17 +697,11 @@
         margin: auto 0 1rem auto;
     }
 
-    .subtitle-desc {
-        font-size: 1.3rem;
-    }
-
     .participants {
         max-height: 200.0px;
     }
 
     .left-scroll-container {
-        /* background: #ff3a17; */
-        width: 100%;
         overflow-y: visible !important;
         height: auto !important;
         /* 자동으로 늘어나게 설정 */
@@ -724,7 +735,7 @@
 
 
 
-    .right-scroll-container {
+    .right {
         position: fixed;
         top: 0;
         right: -100%;
@@ -736,7 +747,7 @@
         z-index: 1000;
     }
 
-    .right-scroll-container.active {
+    .right.active {
         transform: translateX(-100%);
         /* 화면 안으로 등장 */
     }
@@ -784,9 +795,9 @@
 /* 모바일 가로, 모바일 세로 (해상도 240.0px ~ 383.5px)*/
 @media all and (max-width:767px) {
 
-    .main-container {
+    /* .main-container {
         padding: 10px 5px;
-    }
+    } */
 
     /* ======================== */
     /* 좌측 */
@@ -818,8 +829,7 @@
     /* 리턴바 */
 
     .return-bar {
-        margin-top: 5.0px;
-        margin-bottom: 20.0px;
+
 
         display: flex;
         flex-direction: row;
@@ -856,25 +866,21 @@
         margin: auto 0 1rem auto;
     }
 
-    .subtitle-desc {
-        font-size: 1.3rem;
-    }
 
     .participants {
-        max-height: 200.0px;
+        max-height: 400.0px;
+        gap: 2rem;
     }
 
     .name {
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     .eng-name {
-        font-size: 1.0rem;
+        font-size: 1.5rem;
     }
 
     .left-scroll-container {
-        /* background: #ff3a17; */
-        width: 100%;
         overflow-y: visible !important;
         height: auto !important;
         /* 자동으로 늘어나게 설정 */
@@ -895,27 +901,16 @@
     }
 
     .project-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .project-club,
     .author {
-        font-size: 1.0rem;
-    }
-
-
-    .contact-line {
-        width: 4rem;
-        border-top: 0.75px solid black;
-    }
-
-    .project-detail p {
         font-size: 1.3rem;
     }
 
-    .contact-item {
-        font-size: 1.0rem;
-    }
+
+
 
 
     /* ======================== */
@@ -923,7 +918,7 @@
 
 
 
-    .right-scroll-container {
+    .right {
         position: fixed;
         top: 0;
         right: -100%;
@@ -935,7 +930,7 @@
         z-index: 1000;
     }
 
-    .right-scroll-container.active {
+    .right.active {
         transform: translateX(-100%);
         /* 화면 안으로 등장 */
     }
@@ -975,6 +970,30 @@
         stroke: #00AECC;
     }
 
+
+
+
+
+    .contact-line {
+        width: 4rem;
+        border-top: 0.75px solid black;
+    }
+
+    .project-detail p {
+        font-size: 2rem;
+    }
+
+    .project-detail .descText {
+        width: 95%;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .contact-item {
+        font-size: 1.2rem;
+    }
+
+
 }
 
 
@@ -987,6 +1006,21 @@
     }
 
     .returnarrow-container h2 {
+        font-size: 1.7rem;
+    }
+
+    .participants {
+        max-height: 250.0px;
+        gap: 2rem;
+    }
+
+    .project-detail .descText {
+        width: 95%;
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+    }
+
+    .contact-item {
         font-size: 1.7rem;
     }
 

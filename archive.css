@@ -2,20 +2,16 @@
 /* 좌측*/
 
 .left {
-    position: relative;
-    width: 70%;
-    height: 100%;
-    display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    /* 스크롤 가능하도록 설정 */
+    /* padding-left: 5vw; */
 }
+
 
 /*==================================================================*/
 /* 좌측 상단 */
 
 .left-club-info {
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -72,6 +68,22 @@
     white-space: nowrap;
     font-size: 6rem;
     font-weight: 600;
+}
+
+.name {
+    color: var(--dark-gray, #131313);
+    font-size: 1.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.eng-name {
+    color: var(--lightGray, #A9A9A9);
+    font-size: 1.3rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /*==================================================================*/
@@ -214,24 +226,15 @@
 /*==================================================================*/
 /* 메인 컨테이너-우측(세부정보) */
 
-.right-scroll-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
+.right {
+
     display: flex;
     overflow-y: auto;
 }
 
-.right-scroll-container::-webkit-scrollbar {
+.right::-webkit-scrollbar {
     width: 0.0px;
     background: transparent;
-}
-
-.right {
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -249,7 +252,7 @@
 /* 프로젝트 상세 상단 라벨 */
 .project-detail-info {
     width: 100%;
-    min-height: 150.0px;
+    height: auto;
     background: var(--dark-gray, #131313);
     padding: 6rem 3rem 4rem 3rem;
     display: flex;
@@ -259,7 +262,7 @@
 
 .project-detail-info-bottom {
     width: 100%;
-    min-height: 41.0px;
+    min-height: 50.0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -430,6 +433,7 @@
     gap: 5.0px;
     /* 버튼 간격 유지 */
     width: 100%;
+    height: 100%;
 }
 
 
@@ -450,6 +454,7 @@
 
 
 .filter-btn {
+
     white-space: nowrap;
     padding: 5.0px 10.0px;
     font-size: 1.5rem;
@@ -543,6 +548,10 @@
     transition: all 0.2s ease-in-out;
 }
 
+#search-button svg {
+    width: 20px;
+}
+
 #search-button:hover svg circle,
 #search-button:hover svg path {
     stroke: var(--dark-gray, #00AECC);
@@ -580,9 +589,6 @@
 /* 테블릿 가로, 테블릿 세로 (해상도 384.0px ~ 511.5px)*/
 @media all and (max-width:1023px) {
 
-    .main-container {
-        padding: 10px 5px;
-    }
 
     /* ======================== */
     /* 좌측 */
@@ -666,8 +672,6 @@
 
 
     .left-scroll-container {
-        /* background: #ff3a17; */
-        width: 100%;
         overflow-y: visible !important;
         height: auto !important;
         /* 자동으로 늘어나게 설정 */
@@ -700,7 +704,7 @@
     /* 우측 */
 
 
-    .right-scroll-container {
+    .right {
         position: fixed;
         top: 0;
         right: -100%;
@@ -712,7 +716,7 @@
         z-index: 1000;
     }
 
-    .right-scroll-container.active {
+    .right.active {
         transform: translateX(-100%);
         /* 화면 안으로 등장 */
     }
@@ -751,36 +755,28 @@
         stroke: #00AECC;
     }
 
-
-    .project-detail-info {
-        min-height: 100.0px;
-    }
-
     .contact-line {
         width: 4rem;
         border-top: 0.75px solid black;
     }
 
-    .project-detail p {
-        font-size: 1.3rem;
-    }
 
-    .contact-item {
-        font-size: 1.0rem;
-    }
 
     /* ======================== */
     /* 필터바 */
 
     .search-bar {
         flex-direction: column;
-        gap: 5.0px;
+    }
+
+    #filter-buttons,
+    .search-bar {
+        gap: 10px;
     }
 
     .filter-btn {
         display: grid;
-        padding: 2.5px 5.0px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     #search-container {
@@ -789,7 +785,7 @@
     }
 
     #search-input {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     #search-button {
@@ -801,10 +797,6 @@
 /*==================================================================*/
 /* 모바일 가로, 모바일 세로 (해상도 240.0px ~ 383.5px)*/
 @media all and (max-width:767px) {
-
-    .main-container {
-        padding: 10px 5px;
-    }
 
     /* ======================== */
     /* 좌측 */
@@ -819,18 +811,18 @@
         background: transparent;
     }
 
-
     .title {
-        margin-top: 0.0px;
+        margin-top: 20.0px;
     }
 
     .title h1 {
-        font-size: 6rem;
+        font-size: 3rem;
     }
 
     .title h3 {
-        font-size: 3rem;
+        font-size: 1.7rem;
     }
+
 
     /* ======================== */
     /* 리턴바 */
@@ -851,24 +843,16 @@
         margin-bottom: 5rempx;
     }
 
-    .club-desc,
-    .club-participants {
-        width: 90%;
+
+    .name {
+        font-size: 2rem;
     }
 
-    .subtitle-and-logo .logoImage {
-        width: auto;
-        height: 15.0px;
-        margin: auto 0 1rem auto;
-    }
-
-    .participants {
-        max-height: 200.0px;
+    .eng-name {
+        font-size: 1.5rem;
     }
 
     .left-scroll-container {
-        /* background: #ff3a17; */
-        width: 100%;
         overflow-y: visible !important;
         height: auto !important;
         /* 자동으로 늘어나게 설정 */
@@ -889,19 +873,18 @@
     }
 
     .project-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .project-club,
     .author {
-        font-size: 1.0rem;
+        font-size: 1.3rem;
     }
 
     /* ======================== */
     /* 우측 */
 
-
-    .right-scroll-container {
+    .right {
         position: fixed;
         top: 0;
         right: -100%;
@@ -913,7 +896,7 @@
         z-index: 1000;
     }
 
-    .right-scroll-container.active {
+    .right.active {
         transform: translateX(-100%);
         /* 화면 안으로 등장 */
     }
@@ -955,9 +938,9 @@
 
 
 
-    .project-detail-info {
-        min-height: 100.0px;
-    }
+
+
+
 
     .contact-line {
         width: 4rem;
@@ -965,11 +948,19 @@
     }
 
     .project-detail p {
-        font-size: 1.3rem;
+        font-size: 2rem;
+    }
+
+
+
+    .project-detail .descText {
+        width: 95%;
+        font-size: 2rem;
+        line-height: 4rem;
     }
 
     .contact-item {
-        font-size: 1.0rem;
+        font-size: 1.2rem;
     }
 
     /* ======================== */
@@ -977,28 +968,25 @@
 
     .search-bar {
         flex-direction: column;
-        gap: 5.0px;
     }
 
-    .filter-btn {
-        display: grid;
-        padding: 2.5px 5.0px;
-        font-size: 1.2rem;
+    #filter-buttons,
+    .search-bar {
+        gap: 10px;
     }
+
 
     #search-container {
         width: 100%;
-        height: 20.0px;
         padding: 0;
     }
 
     #search-input {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     #search-button {
         padding: 0.5rem;
-        transform: scale(0.8);
     }
 
     #filter-buttons {
@@ -1026,4 +1014,34 @@
         grid-column: span 1;
     }
 
+}
+
+@media all and (max-width:480px) {
+
+
+    /* ======================== */
+    /* 좌측 */
+
+
+    .title {
+        margin-top: 20.0px;
+    }
+
+    .title h1 {
+        font-size: 6rem;
+    }
+
+    .title h3 {
+        font-size: 3rem;
+    }
+
+    .project-detail .descText {
+        width: 95%;
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+    }
+
+    .contact-item {
+        font-size: 1.7rem;
+    }
 }

@@ -1,16 +1,7 @@
 /*==================================================================*/
 /* 좌측 */
 
-.left {
-    position: relative;
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50.0px;
-    /* overflow-y: auto; */
-}
+
 
 /*==================================================================*/
 /* 좌측상단 Project, 작품 리스트 컨테이터 */
@@ -42,16 +33,17 @@
 /* 우측하단 동아리 리스트 */
 
 .clublist {
-    width: 100%;
-    height: auto;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
+    width: auto;
+    /* min-width: 100%; */
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 16.0px;
-    /* background-color: #ffe2e2; */
-} 
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 32.0px;
+    margin: 0 auto;
+}
+
 
 /* 동아리 1개 컨테이너 */
 .club {
@@ -64,30 +56,9 @@
     position: relative;
 }
 
-/* .clublist {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16.0px;
-}
-
-.club {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 500.0px; 
-    height: auto;
-    min-height: 74.0px;
-    margin-bottom: 10.0px;
-    gap: 8.0px;
-} */
-
 
 .subtitle-arrow-container {
     width: 45%;
-    /* 우측 비율 조정 */
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -144,7 +115,6 @@
     padding-top: 25.0px;
 }
 
-
 /* 동아리 분류, Title 텍스트 스타일 */
 .club-category,
 .subtitle-category {
@@ -169,23 +139,15 @@
 
     .left {
         flex-direction: column;
-        gap: 0px;
+        gap: 30px;
     }
 
-
     .club-info {
-        width: 40%;
+        width: 50%;
     }
 
     .club .logoImage {
         height: 35.0px;
-    }
-
-    .clublist {
-        height: 100%;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 6.0px;
     }
 
     .club .subtitle {
@@ -193,30 +155,15 @@
         margin-bottom: 15.0px;
     }
 
-    .club .club-info, .club .subtitle-info {
+    .club .club-info,
+    .club .subtitle-info {
         padding-top: 30.0px;
     }
+
+
 }
 
-@media all and (max-width:900.0px) {
-
-    /* .left {
-        flex-direction: column;
-    }
-
-    .club {
-        width: 400.0px;
-    }
-
-    .club-info {
-        width: 40%;
-    }
-
-    .club .logoImage {
-        height: 30.0px;
-    }
- */
-
+/* @media all and (max-width:900.0px) {
     .left {
         width: 100%;
         height: 100%;
@@ -247,7 +194,7 @@
         margin: auto 0;
         border-left: 2.0px solid #00AECC;
     }
-}
+} */
 
 /* 소주제 제목 텍스트 스타일 */
 .club .subtitle {
@@ -324,27 +271,11 @@
 /* 테블릿 가로, 테블릿 세로 (해상도 384.0px ~ 511.5px)*/
 @media all and (max-width:1023px) {
 
-    .main-container {
-        padding: 10px 5px;
-    }
-
     /* ======================== */
     /* 좌측 */
 
-
-
-    .left {
-        overflow-y: auto;
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .left::-webkit-scrollbar {
-        width: 0.0px;
-        background: transparent;
-    }
-
     .clublist {
+        width: 100%;
         justify-content: center;
         align-items: flex-end;
         gap: 6.0px;
@@ -369,7 +300,7 @@
 
     .club-category,
     .subtitle-category {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .club .logoImage {
@@ -384,8 +315,6 @@
     .arrow svg {
         top: 1.5rem;
     }
-
-
 
     .title {
         margin-top: 40.0px;
@@ -402,36 +331,19 @@
     /* ======================== */
     /* 우측 */
 
-
-
 }
 
 /*==================================================================*/
 /* 모바일 가로, 모바일 세로 (해상도 240.0px ~ 383.5px)*/
 @media all and (max-width:767px) {
 
-    .main-container {
-        padding: 10px 5px;
-    }
-
     /* ======================== */
     /* 좌측 */
 
 
-    .left {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        gap: 30.0px;
-    }
-
-    .left::-webkit-scrollbar {
-        width: 0.0px;
-        background: transparent;
-    }
 
     .title {
-        margin-top: 20.0px;
+        margin-top: 40.0px;
     }
 
     .title h1 {
@@ -588,20 +500,11 @@
 
 @media all and (max-width:480px) {
 
-    .main-container {
-        padding: 10px 5px;
-    }
 
     /* ======================== */
     /* 좌측 */
 
 
-    .left {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        gap: 20.0px;
-    }
 
     .left::-webkit-scrollbar {
         width: 0.0px;
@@ -609,7 +512,7 @@
     }
 
     .title {
-        margin-top: 20.0px;
+        margin-top: 40.0px;
     }
 
     .title h1 {
@@ -620,8 +523,10 @@
         font-size: 3rem;
     }
 
-
     .clublist {
+        width: 100%;
+        height: 70%;
+        justify-content: center;
         align-items: flex-end;
         gap: 6.0px;
     }

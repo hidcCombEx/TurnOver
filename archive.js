@@ -22,7 +22,7 @@ document.addEventListener("wheel", function (event) {
     const { isMobile, isTablet } = getScreenType();
     const leftContainer = document.querySelector(".left");
     const scrollContainer = document.querySelector(".left-scroll-container");
-    const rightContainer = document.querySelector(".right-scroll-container");
+    const rightContainer = document.querySelector(".right");
 
     if (!leftContainer || !scrollContainer || !rightContainer) return;
 
@@ -193,7 +193,7 @@ function applyFilters() {
 // 프로젝트 클릭 시 우측 정보 표시
 function setupProjectClickEvents() {
     const projectItems = document.querySelectorAll(".project-item");
-    const rightScrollContainer = document.querySelector(".right-scroll-container");
+    const right = document.querySelector(".right");
     const rightPanel = document.querySelector(".right");
 
     projectItems.forEach((item, index) => {
@@ -202,14 +202,14 @@ function setupProjectClickEvents() {
             this.classList.add("clicked-project");
 
             const project = filteredProjects[index];
-            const { isMobile, isTablet, isSmallDesktop } = getScreenType();
+            const { isMobile, isTablet } = getScreenType();
 
             if (project) {
                 // ✅ return 버튼을 포함한 상태로 우측 패널 생성
                 rightPanel.innerHTML = `
                     <div class="project-detail">
                         <div class="project-detail-info">
-                            ${ (isMobile || isTablet || isSmallDesktop) ? `
+                            ${ (isMobile || isTablet ) ? `
                                 <div class="right-return-button">
                                     <svg width="18" height="30" viewBox="0 0 18 30" fill="none">
                                         <path d="M16.667 1.66797L3.33366 15.0013L16.667 28.3346" stroke="#A9A9A9" stroke-width="3.33333"/>
@@ -310,37 +310,37 @@ function createContactSection(contact) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const projectItems = document.querySelectorAll(".project-item");
-    const rightScrollContainer = document.querySelector(".right-scroll-container");
+    const right = document.querySelector(".right");
     let startX = 0;
     let endX = 0;
 
-    if (!rightScrollContainer || !projectItems.length) return;
+    if (!right || !projectItems.length) return;
 
-    // 📌 프로젝트 아이템 클릭 시 right-scroll-container 표시
+    // 📌 프로젝트 아이템 클릭 시 right 표시
     projectItems.forEach((item) => {
         item.addEventListener("click", function () {
-            rightScrollContainer.classList.add("active"); // right 등장
+            right.classList.add("active"); // right 등장
         });
     });
 
-    // 📌 오른쪽으로 스와이프하면 right-scroll-container 닫기
-    rightScrollContainer.addEventListener("touchstart", function (event) {
+    // 📌 오른쪽으로 스와이프하면 right 닫기
+    right.addEventListener("touchstart", function (event) {
         startX = event.touches[0].clientX;
     });
 
-    rightScrollContainer.addEventListener("touchmove", function (event) {
+    right.addEventListener("touchmove", function (event) {
         endX = event.touches[0].clientX;
     });
 
-    rightScrollContainer.addEventListener("touchend", function () {
+    right.addEventListener("touchend", function () {
         if (endX - startX > 50) { // 오른쪽으로 스와이프하면 닫기
-            rightScrollContainer.classList.remove("active");
+            right.classList.remove("active");
         }
     });
 
     // 📌 마우스 휠 스크롤 허용
-    rightScrollContainer.addEventListener("wheel", function (event) {
-        rightScrollContainer.scrollTop += event.deltaY;
+    right.addEventListener("wheel", function (event) {
+        right.scrollTop += event.deltaY;
         event.preventDefault(); // 기본 스크롤 차단 방지
     }, { passive: false });
 });
