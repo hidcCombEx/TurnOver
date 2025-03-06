@@ -27,7 +27,7 @@ window.yawayatsProjects = [
         club: "야와야츠",
         title: "을씨년스러운(The Eclipse Serpent)",
         author: "문지우",
-        thumbnail: `images/thumbnail/yawayats/jiwoo.png`,
+        thumbnail: `images/thumbnail/yawayats/jiwoo1.png`,
         media: [
             "images/detail_image/yawayats/jiwoo1.png",
             "images/detail_image/yawayats/jiwoo2.png"
