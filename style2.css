@@ -167,7 +167,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 0px;
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: 600;
     padding-top: 20px;
 }
