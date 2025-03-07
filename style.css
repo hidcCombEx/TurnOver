@@ -17,7 +17,7 @@ body {
 .header {
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: var(--dark-gray, #131313);
     padding: 20px 0;
@@ -28,10 +28,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 5vw;
 }
+
+/*====================================*/
+/* 좌측 로고 */
 
 .logo {
     flex-shrink: 0;
@@ -50,6 +51,9 @@ body {
     filter: brightness(70%);
 }
 
+/*====================================*/
+/* 우측 탭 */
+
 nav {
     width: auto;
     height: auto;
@@ -63,7 +67,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 0px;
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: 600;
     padding-top: 20px;
 }
@@ -94,7 +98,24 @@ nav ul .active {
     color: #00AECC;
 }
 
+
+/*==================================================================*/
+/*==================================================================*/
+/* 미디어쿼리 */
+
+
+/*==================================================================*/
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (max-width:1023px) {
+
+    html,
+    body {
+        font-size: 10px;
+    }
+
+    /* ======================== */
+    /* 헤더 */
+
     .header {
         padding: 10px 0px;
     }
@@ -111,9 +132,40 @@ nav ul .active {
     nav ul li {
         width: 150px;
     }
+
+    /* ======================== */
+    /* 좌측 배경 */
+
+
+    .left {
+        overflow-y: auto;
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .leftbg {
+        width: 100%;
+    }
+
+    .rightbg {
+        width: 0;
+    }
+
+    /* ======================== */
 }
 
+/*==================================================================*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) {
+
+    html,
+    body {
+        font-size: 10px;
+    }
+
+    /* 헤더 */
+
     .header {
         height: 170px;
         padding: 10px 0px;
@@ -148,9 +200,46 @@ nav ul .active {
         width: 100%;
         height: auto;
     }
+
+    /* ======================== */
+    /* 좌측 배경 */
+
+    .left {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 30.0px;
+    }
+
+
+    .leftbg {
+        width: 100%;
+    }
+
+    .club-leftbg {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightbg {
+        width: 0;
+    }
 }
 
+
+
+/*==================================================================*/
+/* 소형 모바일*/
 @media all and (max-width:480px) {
+
+    html,
+    body {
+        font-size: 6px;
+    }
+
+    /* ======================== */
+    /* 헤더 */
+
     .header {
         height: 150px;
         padding: 0;
@@ -190,6 +279,30 @@ nav ul .active {
     nav ul li {
         width: 100%;
         height: auto;
+    }
+
+    /* ======================== */
+    /* 좌측 배경 */
+
+
+    .left {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 20.0px;
+    }
+
+    .leftbg {
+        width: 100%;
+    }
+
+    .club-leftbg {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightbg {
+        width: 0;
     }
 }
 
