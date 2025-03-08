@@ -30,7 +30,6 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    margin-top: 56.0px;
     margin-bottom: 7rem;
 }
 
@@ -607,11 +606,6 @@
         background: transparent;
     }
 
-
-    .title {
-        margin-top: 20.0px;
-    }
-
     .title h1 {
         font-size: 3rem;
     }
@@ -671,7 +665,6 @@
     .club-left {
         flex-direction: column;
         gap: 35.0px;
-        margin-top: 20.0px;
     }
 
 
@@ -815,10 +808,6 @@
         background: transparent;
     }
 
-    .title {
-        margin-top: 20.0px;
-    }
-
     .title h1 {
         font-size: 3rem;
     }
@@ -843,7 +832,6 @@
     .club-left {
         flex-direction: column;
         gap: 35.0px;
-        margin-top: 20.0px;
         margin-bottom: 5rempx;
     }
 
@@ -1025,11 +1013,6 @@
 
     /* ======================== */
     /* 좌측 */
-
-
-    .title {
-        margin-top: 20.0px;
-    }
 
     .title h1 {
         font-size: 6rem;
