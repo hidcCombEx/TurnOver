@@ -31,7 +31,7 @@ body {
 
 main {
     width: 100%;
-    height: calc(100dvh - 200px);
+    height: calc(100dvh - 172px);
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -69,7 +69,7 @@ main {
 .left {
     width: 100%;
     height: 100%;
-    max-height: calc(100dvh - 200px);
+    max-height: calc(100dvh - 172px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,7 +96,7 @@ main {
 /* 푸터 */
 footer {
     width: 100%;
-    height: 100px;
+    height: 72px;
     display: flex;
     justify-content: space-between;
     padding: 18px 60px;
@@ -455,7 +455,7 @@ nav ul .active {
     /* 메인 */
 
     main {
-        height: calc(100dvh - 250px);
+        height: calc(100dvh - 130px);
     }
 
 
@@ -536,7 +536,7 @@ nav ul .active {
     }
 
     footer {
-        height: 100px;
+        height: 30px;
     }
 
     .footer-text-title,
@@ -544,7 +544,7 @@ nav ul .active {
         font-size: 10px;
     }
 
-    .footer-logo img {
-        height: 12px;
+    .footer-ex-info, .footer-logo {
+        display: none;
     }
 }
