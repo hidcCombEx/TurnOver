@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 /* 헤더 */
@@ -370,7 +370,7 @@ main {
 }
 
 .image-cell {
-    /* position: relative; */
+    position: relative;
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -722,6 +722,7 @@ footer {
 @media (max-width: 480px) {
     footer {
         height: 100%;
+        padding: 10px 20px;
     }
 
     .footer-text-title,
