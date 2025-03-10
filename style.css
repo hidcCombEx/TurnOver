@@ -311,7 +311,7 @@ nav ul .active {
 
 main {
     width: 100%;
-    max-height: calc(100vh - 172px);
+    height: calc(100vh - 172px);
     object-fit: contain;
     display: flex;
     flex-direction: column;
