@@ -26,6 +26,7 @@
 
 .left {
     flex-direction: column;
+    padding: 0 0 0 5vw;
     /* padding-left: 5vw; */
 }
 
